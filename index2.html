@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<title>Feddy</title>
+
+<style>
+    body {
+        background: #222;
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        animation: girar 2s linear infinite;
+    }
+
+    @keyframes girar {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+
+<script>
+function toggleAudio() {
+    var audio = document.getElementById("miAudio");
+
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+</script>
+
+</head>
+<body>
+
+<h1>Click para reproducir❤️</h1>
+
+<img src="https://preferred-coral-dkzthocvbe.edgeone.app/ChatGPT_Image_15_abr_2026__08_29_20-removebg-preview.png"
+     width="450"
+     onclick="toggleAudio()"
+     style="cursor:pointer;">
+
+<audio id="miAudio">
+    <source src="BTSJustoneday.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
